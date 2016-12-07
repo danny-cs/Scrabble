@@ -10,7 +10,7 @@
 .wrapper {
 	margin:auto;
 	width: 960px;
-	display: block;
+	display: inline block;
 }
 
 .tilePiece {
