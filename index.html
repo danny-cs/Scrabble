@@ -1,0 +1,55 @@
+<!doctype html>
+<!--
+  -Danny Nguyen
+  -danny_nguyen1@student.uml.edu
+  -University Of Massachusetts Lowell - 96.161 GUI Programming 1
+  -Last updated December 6th, 2016
+-->
+<!--
+- This index.html is the structure which includes links to jquery and bootstrap which is utilized in making this scrabble game
+- There are also divs which create that board pieces, tile pieces, submit button, reset button, score keeper, and the alerts
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scrabble</title>
+    <link rel="stylesheet" href="./jquery-ui.min.css"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="./scrabble.css"></link>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="pieces.js"></script>
+    <script src="scrabble.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="hidden invalidWord alert alert-danger alert-dismissible fade in">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong>Hmm!</strong> You wrote an invalid word on the board.
+    </div>
+    <div class="wrapper">
+      <div class="bottomArea">
+        <p><b>Score:</b> <i id="score">0</i></p>
+        <button class="btn btn-success submit">Submit</button>
+        <button class="btn btn-warning reset">Reset</button>
+      </div>
+      <div class="track">
+      </div>
+      <div class="board">
+        <div class="boardPiece"></div>
+        <div class="boardPiece"></div>
+        <div class="boardPiece"></div>
+        <div class="boardPiece"></div>
+        <div class="boardPiece"></div>
+        <div class="boardPiece"></div>
+        <div class="boardPiece"></div>
+        <div class="boardPiece"></div>
+      </div>
+      
+      <div class="bankArea">
+        <p>Drag a piece here to trade for another!</p>
+      </div>
+    </div>
+  </body>
+</html>

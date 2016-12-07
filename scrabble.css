@@ -1,0 +1,92 @@
+/*
+  -Danny Nguyen
+  -danny_nguyen1@student.uml.edu
+  -University Of Massachusetts Lowell - 96.161 GUI Programming 1
+  -Last updated December 6th, 2016
+-->
+<!--
+- styling of the scrabble page using basic css to add unique padding, margin, and placement of each object
+*/
+.wrapper {
+	margin:auto;
+	width: 960px;
+	display: block;
+}
+
+.tilePiece {
+	width: 100px;
+	height: 100px;
+	background-size:cover;
+	float: left;
+}
+
+.track > .tilePiece {
+	margin-left: 10px;
+	margin-right:10px;
+	margin-top: -20px;
+}
+
+.track {
+	width: 960px;
+    height: 90px;
+    background-color: #a98f6d;
+    margin-top: 30px;
+    border-bottom: 30px solid black;
+}
+
+.underTrack {
+	border-radius: 20px;
+	height: 20px;
+	width: 960px;
+	background-color: black;
+	margin-top: -30px;
+}
+.boardPiece {
+	width: 120px;
+	height: 120px;
+	background-color: #dfbe93;
+	float: left;	
+	border: 10px solid brown;
+	text-align: center;
+}
+
+.board {
+	display: inline-block;
+}
+
+.track {
+	display: inline-block;
+}
+
+body {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.bottomArea {
+	text-align: left;
+	float: left;
+	width: 200px;
+	color: black;
+}
+
+.invalidWord {
+	width: 600px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 20px;
+}
+
+.double {
+	color: #a94442;
+    margin-top: 30px;
+} 
+
+.bankArea {
+	width: 300px;
+	height: 200px;
+	background-color: brown;
+	color: white;
+	text-align: center;
+	padding-top: 50px;
+}
