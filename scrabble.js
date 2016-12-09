@@ -79,7 +79,7 @@ function reset() {
     $(".submit").hide();
 
     // Do a jQuery Ajax request for the text dictionary
-    $.get("http://downing.io/GUI/files/dictionary.txt", function(txt) {
+    $.get("/dictionary.txt", function(txt) {
         // Get an array of all the words
         var words = txt.split("\n");
 
