@@ -79,7 +79,7 @@ function reset() {
     $(".submit").hide();
 
     // Do a jQuery Ajax request for the text dictionary
-    $.get("/dictionary.txt", function(txt) {
+    $.get("/Scrabble/dictionary.txt", function(txt) {
         // Get an array of all the words
         var words = txt.split("\n");
 
